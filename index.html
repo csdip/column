@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>column</title>
+  </head>
+
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+
+    .container {
+      width: 1200px;
+      margin-inline: auto;
+      /* gap: 20px; */
+    }
+
+    @media (max-width: 1199px) {
+      .container {
+        width: 100%;
+      }
+    }
+
+    .row{
+      margin: 0 -10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .column {
+      /* padding: 0 10px; */
+    }
+
+
+
+    .box{
+      border-radius: 10px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      font-weight: bold;
+      background-color: brown;
+      outline: 1px solid bisque;
+      color: bisque;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column"><div class="box">1</div></div>
+      <div class="column"><div class="box">2</div></div>
+      <div class="column"><div class="box">3</div></div>
+      <div class="column"><div class="box">4</div></div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let columns = document.querySelectorAll(".column");
+
+
+    // column - 1
+
+    if (columns.length == 1) {
+      columns.forEach((e) => {
+        e.style.width = 100 + "%";
+      });
+    }
+
+    // column - 2
+
+    if (columns.length == 2) {
+      columns.forEach((e) => {
+        e.style.width = 50 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 3
+
+    if (columns.length == 3) {
+      columns.forEach((e) => {
+        e.style.width = 33.33 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 33.33 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 4
+
+    if (columns.length == 4) {
+      columns.forEach((e) => {
+        e.style.width = 25 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 25 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 5
+
+    if (columns.length == 5) {
+      columns.forEach((e) => {
+        e.style.width = 20 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 20 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 6
+
+    if (columns.length == 6) {
+      columns.forEach((e) => {
+        e.style.width = 16.66 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 16.66 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 7
+
+    if (columns.length == 7) {
+      columns.forEach((e) => {
+        e.style.width = 14.28 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 14.28 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 8
+
+    if (columns.length == 8) {
+      columns.forEach((e) => {
+        e.style.width = 12.5 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 12.5 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 9
+
+    if (columns.length == 9) {
+      columns.forEach((e) => {
+        e.style.width = 11.11 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 11.11 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 10
+
+    if (columns.length == 10) {
+      columns.forEach((e) => {
+        e.style.width = 10 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 10 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 11
+
+    if (columns.length == 11) {
+      columns.forEach((e) => {
+        e.style.width = 9.09 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 9.09 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+    // column - 12
+
+    if (columns.length == 12) {
+      columns.forEach((e) => {
+        e.style.width = 8.33 + "%";
+      });
+      if (window.innerWidth < 960) {
+        columns.forEach((e) => {
+          e.style.width = 50 + "%";
+        });
+      }
+      if (window.innerWidth < 768) {
+        columns.forEach((e) => {
+          e.style.width = 100 + "%";
+        });
+      }
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 960) {
+          columns.forEach((e) => {
+            e.style.width = 8.33 + "%";
+          });
+        }
+        if (window.innerWidth < 960) {
+          columns.forEach((e) => {
+            e.style.width = 50 + "%";
+          });
+        }
+        if (window.innerWidth < 768) {
+          columns.forEach((e) => {
+            e.style.width = 100 + "%";
+          });
+        }
+      });
+    }
+  </script>
+</html>
